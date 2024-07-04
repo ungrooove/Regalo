@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.container-box{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.box{
+    display: flex;
+    min-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    align-items: start;
+    justify-content: start;
+    border: 2px solid rgb(40, 90, 12);
+    background-image: url(https://www.routinecos.com/wp-content/uploads/2023/10/Gift-wrap.png);
+    background-size: 250px;
+    background-repeat: repeat-y;
+    background-color: rgb(112, 161, 78);
+    cursor: pointer;
+    transition: rotate .5s, padding .3s, min-width 1s, min-height 1s, background-color 1s, border 1s, background-image 1s, z-index .1ms;
+    z-index: 20;
+
+}
+
+.text{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    transition: color .5s;
+    user-select: none;
+    
+}
+
+
+.box:hover{
+    padding: 5px;
+    rotate: 5deg;
+}
+
+.box:active{
+    rotate: 90deg;
+    min-width: 500px;
+    min-height: 500px;
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    z-index: 10;
+}
+
+
+.after{
+    position: absolute;
+    max-width: 180px;
+    max-height: 180px;
+    text-wrap: pretty;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+    box-sizing: border-box;
+    transition: color 5s;
+    color: transparent;
+}
+
+.after:hover{
+    color: rgb(104, 33, 175);
+}
+
+
